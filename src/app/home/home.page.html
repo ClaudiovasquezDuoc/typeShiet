@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <ion-header class="ion-no-border" mode="ios" translucent color="primary">
     <ion-row>
         <ion-col class="ion-text-center">
@@ -7,13 +8,13 @@
 </ion-header>
 <ion-content [fullscreen]="true">
     <ion-row class="ion-justify-content-center ion-margin-top">
-        <ion-col size="10" class="ion-text-center">
+        <ion-col size="12" sizeMd="10" class="ion-text-center">
             <h2>Menu</h2>
             <p>Selecciona el tipo de documento que necesitas informar</p>
         </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col class="ion-text-center" size="4">
+        <ion-col class="ion-text-center" size="6" sizeSm="6" sizeMd="4">
             <ion-card (click)="abrirPDF('banco_chile')">
                 <ion-card-header>
                     <ion-card-title>OT Banco de Chile</ion-card-title>
@@ -24,7 +25,7 @@
                 </ion-card-content>
             </ion-card>
         </ion-col>
-        <ion-col class="ion-text-center" size="4">
+        <ion-col class="ion-text-center" size="6" sizeSm="6" sizeMd="4">
             <ion-card (click)="abrirPDF('banco_falabella')">
                 <ion-card-header>
                     <ion-card-title>OT Banco Falabella</ion-card-title>
@@ -35,7 +36,7 @@
                 </ion-card-content>
             </ion-card>
         </ion-col>
-        <ion-col class="ion-text-center" size="4">
+        <ion-col class="ion-text-center" size="6" sizeSm="6" sizeMd="4">
             <ion-card (click)="abrirPDF('banco_itau')">
                 <ion-card-header>
                     <ion-card-title>OT Banco Itau</ion-card-title>
@@ -46,7 +47,7 @@
                 </ion-card-content>
             </ion-card>
         </ion-col>
-        <ion-col class="ion-text-center" size="4">
+        <ion-col class="ion-text-center" size="6" sizeSm="6" sizeMd="4">
             <ion-card (click)="abrirPDF('loomis')">
                 <ion-card-header>
                     <ion-card-title>OT Loomis</ion-card-title>
@@ -57,7 +58,7 @@
                 </ion-card-content>
             </ion-card>
         </ion-col>
-        <ion-col class="ion-text-center" size="4">
+        <ion-col class="ion-text-center" size="6" sizeSm="6" sizeMd="4">
             <ion-card (click)="abrirPDF('banco_estado')">
                 <ion-card-header>
                     <ion-card-title>OT Banco Estado</ion-card-title>
@@ -70,7 +71,7 @@
         </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col class="ion-text-center" size="4">
+        <ion-col class="ion-text-center" size="12" sizeSm="6" sizeMd="4">
             <ion-card (click)="abrirPDF('vacia')">
                 <ion-card-header>
                     <ion-card-title>Orden de Trabajo Vacia</ion-card-title>
