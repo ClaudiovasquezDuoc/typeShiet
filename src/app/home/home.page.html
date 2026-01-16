@@ -1,20 +1,93 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border" mode="ios" translucent color="primary">
+    <ion-row>
+        <ion-col class="ion-text-center">
+            <ion-title size="large">Bienvenido a TypeShiet</ion-title>
+        </ion-col>
+    </ion-row>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-row class="ion-justify-content-center ion-margin-top">
+        <ion-col size="10" class="ion-text-center">
+            <h2>Menu</h2>
+            <p>Selecciona el tipo de documento que necesitas informar</p>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="ion-text-center" size="4">
+            <ion-card (click)="abrirPDF('banco_chile')">
+                <ion-card-header>
+                    <ion-card-title>OT Banco de Chile</ion-card-title>
+                </ion-card-header>
+                <ion-img src="assets/banco_chile_logo.jpg" alt="Banco de Chile Logo" />
+                <ion-card-content>
+                    Selecciona y modifica los detalles de esta OT preestablecida.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col class="ion-text-center" size="4">
+            <ion-card (click)="abrirPDF('banco_falabella')">
+                <ion-card-header>
+                    <ion-card-title>OT Banco Falabella</ion-card-title>
+                </ion-card-header>
+                <ion-img src="assets/banco_falabella_logo.png" alt="Banco Falabella Logo" />
+                <ion-card-content>
+                    Selecciona y modifica los detalles de esta OT preestablecida.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col class="ion-text-center" size="4">
+            <ion-card (click)="abrirPDF('banco_itau')">
+                <ion-card-header>
+                    <ion-card-title>OT Banco Itau</ion-card-title>
+                </ion-card-header>
+                <ion-img src="assets/banco_itau_logo.png" alt="Banco Itau Logo" />
+                <ion-card-content>
+                    Selecciona y modifica los detalles de esta OT preestablecida.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col class="ion-text-center" size="4">
+            <ion-card (click)="abrirPDF('loomis')">
+                <ion-card-header>
+                    <ion-card-title>OT Loomis</ion-card-title>
+                </ion-card-header>
+                <ion-img src="assets/loomis_logo.png" alt="Loomis Logo" />
+                <ion-card-content>
+                    Selecciona y modifica los detalles de esta OT preestablecida.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col class="ion-text-center" size="4">
+            <ion-card (click)="abrirPDF('banco_estado')">
+                <ion-card-header>
+                    <ion-card-title>OT Banco Estado</ion-card-title>
+                </ion-card-header>
+                <ion-img src="assets/banco_estado_logo.jpg" alt="Banco Estado Logo" />
+                <ion-card-content>
+                    Selecciona y modifica los detalles de esta OT preestablecida.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="ion-text-center" size="4">
+            <ion-card (click)="abrirPDF('vacia')">
+                <ion-card-header>
+                    <ion-card-title>Orden de Trabajo Vacia</ion-card-title>
+                </ion-card-header>
+                <ion-img src="assets/logo_pdf.png" alt="logo_pdf" />
+                <ion-card-content>
+                    Crea y gestiona órdenes de trabajo de manera eficiente.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
+<ion-footer>
+    <ion-row>
+        <ion-col class="ion-text-center ion-padding">
+            <p>&copy; 2025 TypeShiet. Todos los derechos reservados.</p>
+        </ion-col>
+    </ion-row>
+</ion-footer>
